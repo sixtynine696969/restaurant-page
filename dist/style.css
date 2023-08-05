@@ -65,6 +65,31 @@ header nav button.selected {
     color: var(--dark-blue);
 }
 
+main.home-content {
+    background: url(../src/images/seafood.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 100px;
+    border-radius: 20px;
+    border: 5px solid var(--dark-blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.home-content p {
+    font-family: "GrotesqueBourgeoisieRegular";
+    background-color: rgba(17, 63, 103, 0.5);
+    font-size: 5rem;
+    color: var(--white);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     background-color: var(--dark-blue);
     color: var(--white)
