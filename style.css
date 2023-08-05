@@ -1,0 +1,71 @@
+@import url("https://fontlibrary.org//face/grotesque-bourgeoisie");
+
+:root {
+    --dark-blue: #113f67;
+    --light-blue: #38598b;
+    --purple: #a2a8d3;
+    --white: #e7eaf6;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #113f67;
+}
+
+header > p {
+    font-family: "GrotesqueBourgeoisieRegular";
+    font-size: 5rem;
+    padding: 1rem 0;
+    color: var(--white);
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav button {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+
+    background-color: var(--white);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    border: none;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+header nav button.selected {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+main {
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white)
+}
