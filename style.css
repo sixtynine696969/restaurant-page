@@ -65,7 +65,7 @@ header nav button.selected {
     color: var(--dark-blue);
 }
 
-main.home-content {
+main.home {
     background: url(../src/images/seafood.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ main.home-content {
     align-items: center;
 }
 
-main.home-content p {
+main.home p {
     font-family: "GrotesqueBourgeoisieRegular";
     background-color: rgba(17, 63, 103, 0.5);
     font-size: 5rem;
