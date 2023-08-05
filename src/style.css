@@ -181,6 +181,7 @@ main.menu .card .details .dish {
 
 main.menu .card .details .ingredients {
     font-size: 1.3rem;
+    text-align: center;
 }
 
 main.menu .card .details .price {
