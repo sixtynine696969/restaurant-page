@@ -1,5 +1,11 @@
 import { content } from "./shared-vars";
 
+// Images
+import Shrimp from '../images/shrimp.jpg';
+import Salmon from '../images/salmon.webp';
+import Octopus from '../images/octopus.jpg';
+import Catfish from '../images/catfish.webp';
+
 const getMain = () => document.querySelector('main');
 // const createElement = (tag) => document.createElement(tag)
 
@@ -33,7 +39,9 @@ function addContact() {
 
     for (const i in obj) {
         const p = document.createElement('p');
-        p.textContent = i;
+        const span1 = document.createElement('span')
+        span1.textContent = i
+        p.appendChild(span1);
         
         const span = document.createElement('span');
         span.textContent = obj[i];
@@ -55,25 +63,25 @@ function addMenu() {
     
     const arr = [
         makeMenuObj(
-            '../src/images/shrimp.jpg',
+            Shrimp,
             'Spicy Shrimp',
             'Fresh fish fillets, Chili powder, Paprika, Garlic paste, Ginger paste, Onion, Tomatoes, Green chilies, Lemon juice, Salt, Cooking oil, Fresh cilantro.',
             '$32.99',
         ),
         makeMenuObj(
-            '../src/images/salmon.webp',
+            Salmon,
             'Baked Salmon',
             'Salmon, Butter, Lemon Juice, Garlic, Parsley, Dill.',
             '$58.99',
         ),
         makeMenuObj(
-            '../src/images/octopus.jpg',
+            Octopus,
             'Cooked Octopus',
             'Cooked octopus tentacles, Potatoes, Sea salt, Ground pepper, Extra-virgin olive oil, Chopped thyme, Cured Spanish chorizo.',
             '$73.99',
         ),
         makeMenuObj(
-            '../src/images/catfish.webp',
+            Catfish,
             'Crispy Baked Catfish',
             'Catfish fillets, Seasoning, Olive oil, Lemon slices.',
             '$23.99',
@@ -89,7 +97,7 @@ function addMenu() {
 
         for(const key in item) {
             if (key === 'src') {
-                const img = document.createElement('img');
+                const img = new Image();
                 img['src'] = item[key];
                 card.appendChild(img);
             } else {

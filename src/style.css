@@ -51,7 +51,13 @@ header > p {
 
 header nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 15px;
+}
+
+@media screen and (max-width: 420px) {
+    header nav {
+        gap: 0;
+    }
 }
 
 header nav button {
@@ -212,6 +218,7 @@ main.contact .card p {
     main.contact .card {
         height: max-content;
         gap: 20px;
+        max-width: 80%;
     }
 
     main.contact .card p {
@@ -230,4 +237,10 @@ footer {
     align-items: center;
     background-color: var(--dark-blue);
     color: var(--white);
+}
+
+@media screen and (max-width: 720px) {
+    footer {
+        font-size: 1.2rem;
+    }
 }
