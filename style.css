@@ -143,7 +143,38 @@ main.menu .card .details .price {
     font-size: 1.4rem;
 }
 
-footer {
+main.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.contact .card {
+    font-family: "GrotesqueBourgeoisieRegular";
+    font-size: 2.3rem;
+
+    color: var(--white);
+    border-radius: 20px;
+
+    padding: 50px;
+    height: 250px;
     background-color: var(--dark-blue);
-    color: var(--white)
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.contact .card p span {
+    margin-left: 10px;
+}
+
+footer {
+    font-family: "GrotesqueBourgeoisieRegular";
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    color: var(--white);
 }

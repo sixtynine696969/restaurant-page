@@ -1,1 +1,0 @@
-(()=>{const e=document.querySelectorAll("button");e.forEach((c=>{c.addEventListener("click",(()=>{e.forEach((e=>{e.classList.remove("selected")})),c.classList.add("selected")}))}))})();
